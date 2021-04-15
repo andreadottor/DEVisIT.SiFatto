@@ -1,0 +1,17 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net5.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Folder Include="Services\" />
+    <Folder Include="Repositories\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\DEVisIT.SiFatto.ApplicationCore\DEVisIT.SiFatto.ApplicationCore.csproj" />
+    <ProjectReference Include="..\DEVisIT.SiFatto.Domain\DEVisIT.SiFatto.Domain.csproj" />
+  </ItemGroup>
+
+</Project>
