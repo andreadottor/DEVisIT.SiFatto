@@ -3,6 +3,9 @@
 ## YouTube video:
 
 1. Struttura soluzione e cartelle: [DEV.is.it | Strutturare progetti e soluzione seguendo la CLEAN ARCHITECTURE](https://youtu.be/z7zAqXbWWlo)
+2. Repository e Service ...
+3. Configurazione e Logging ...
+4. ...
 
 
 ## Per approfondimenti:
