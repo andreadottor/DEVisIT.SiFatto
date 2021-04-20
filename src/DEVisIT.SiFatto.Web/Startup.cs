@@ -1,5 +1,7 @@
 namespace DEVisIT.SiFatto.Web
 {
+    using DEVisIT.SiFatto.ApplicationCore;
+    using DEVisIT.SiFatto.Infrastructure;
     using Microsoft.AspNetCore.Builder;
     using Microsoft.AspNetCore.Hosting;
     using Microsoft.AspNetCore.HttpsPolicy;
@@ -24,6 +26,8 @@ namespace DEVisIT.SiFatto.Web
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddRazorPages();
+            services.AddApplicationCore();
+            services.AddInfrastructure();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
