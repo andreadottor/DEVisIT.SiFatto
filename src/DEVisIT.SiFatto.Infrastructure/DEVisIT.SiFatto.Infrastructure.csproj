@@ -6,7 +6,6 @@
 
   <ItemGroup>
     <ProjectReference Include="..\DEVisIT.SiFatto.ApplicationCore\DEVisIT.SiFatto.ApplicationCore.csproj" />
-    <ProjectReference Include="..\DEVisIT.SiFatto.Domain\DEVisIT.SiFatto.Domain.csproj" />
   </ItemGroup>
 
 </Project>
