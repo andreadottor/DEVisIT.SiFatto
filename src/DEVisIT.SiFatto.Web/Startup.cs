@@ -1,6 +1,7 @@
 namespace DEVisIT.SiFatto.Web
 {
     using DEVisIT.SiFatto.ApplicationCore;
+    using DEVisIT.SiFatto.ApplicationCore.Settings;
     using DEVisIT.SiFatto.Infrastructure;
     using Microsoft.AspNetCore.Builder;
     using Microsoft.AspNetCore.Hosting;
@@ -28,6 +29,19 @@ namespace DEVisIT.SiFatto.Web
             services.AddRazorPages();
             services.AddApplicationCore();
             services.AddInfrastructure();
+
+            var cs1 = Configuration.GetConnectionString("DefaultConnection");
+            var cs2 = Configuration.GetSection("ConnectionStrings")["DefaultConnection"];
+            var cs3 = Configuration.GetValue<string>("ConnectionStrings:DefaultConnection");
+
+            //services.Configure<MailSettings>(Configuration.GetSection("MailSettings"));
+            services.AddOptions<MailSettings>()
+                    .Bind(Configuration.GetSection("MailSettings"))
+                    .ValidateDataAnnotations();
+
+            var mailSettings = new MailSettings();
+            Configuration.GetSection("MailSettings").Bind(mailSettings);
+            services.AddSingleton(mailSettings);
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
