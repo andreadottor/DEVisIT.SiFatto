@@ -3,9 +3,10 @@
     using DEVisIT.SiFatto.Domain.Entities;
     using System;
     using System.Collections.Generic;
+    using System.Threading.Tasks;
 
     public interface IQuestionRepository : IRepository<Question, Guid>
     {
-        IEnumerable<Question> GetQuestionsByUser(string userId);
+        Task<IEnumerable<Question>> GetQuestionsByUserAsync(string userId);
     }
 }

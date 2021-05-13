@@ -2,18 +2,19 @@
 {
     using DEVisIT.SiFatto.Domain.Entities;
     using System.Collections.Generic;
+    using System.Threading.Tasks;
 
     public interface IRepository<TEntity, TPrimaryKey>
         where TEntity : Entity<TPrimaryKey>
     {
-        IEnumerable<TEntity> GetAll();
+        Task<IEnumerable<TEntity>> GetAllAsync();
 
-        TEntity GetById(TPrimaryKey id);
+        Task<TEntity> GetByIdAsync(TPrimaryKey id);
 
-        void Insert(TEntity entity);
+        Task InsertAsync(TEntity entity);
 
-        void Update(TEntity entity);
+        Task UpdateAsync(TEntity entity);
 
-        void Delete(TPrimaryKey id);
+        Task DeleteAsync(TPrimaryKey id);
     }
 }
