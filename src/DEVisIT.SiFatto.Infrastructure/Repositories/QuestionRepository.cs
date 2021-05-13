@@ -122,7 +122,7 @@ WHERE id = @Id";
 
         public async Task<long> Count()
         {
-            const string query = "SELECt Count(*) FROM Questions";
+            const string query = "SELECT Count(*) FROM Questions";
             using var connection = new SqlConnection(_connectionString);
             return await connection.ExecuteScalarAsync<long>(query);
         }

@@ -3,13 +3,18 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.31129.286
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DEVisIT.SiFatto.Web", "DEVisIT.SiFatto.Web\DEVisIT.SiFatto.Web.csproj", "{AE7C1F9B-B5F3-4826-B0CE-367C1E2426D7}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DEVisIT.SiFatto.Web", "DEVisIT.SiFatto.Web\DEVisIT.SiFatto.Web.csproj", "{AE7C1F9B-B5F3-4826-B0CE-367C1E2426D7}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DEVisIT.SiFatto.ApplicationCore", "DEVisIT.SiFatto.ApplicationCore\DEVisIT.SiFatto.ApplicationCore.csproj", "{3791D44F-6C1D-43B1-968D-70E1C99214CF}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DEVisIT.SiFatto.ApplicationCore", "DEVisIT.SiFatto.ApplicationCore\DEVisIT.SiFatto.ApplicationCore.csproj", "{3791D44F-6C1D-43B1-968D-70E1C99214CF}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DEVisIT.SiFatto.Infrastructure", "DEVisIT.SiFatto.Infrastructure\DEVisIT.SiFatto.Infrastructure.csproj", "{B7FD3330-90DD-46C6-8DE1-824A68E8BC98}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DEVisIT.SiFatto.Infrastructure", "DEVisIT.SiFatto.Infrastructure\DEVisIT.SiFatto.Infrastructure.csproj", "{B7FD3330-90DD-46C6-8DE1-824A68E8BC98}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DEVisIT.SiFatto.Domain", "DEVisIT.SiFatto.Domain\DEVisIT.SiFatto.Domain.csproj", "{1CF7D9BD-6BD8-49C3-926E-0CA6DE0E8920}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DEVisIT.SiFatto.Domain", "DEVisIT.SiFatto.Domain\DEVisIT.SiFatto.Domain.csproj", "{1CF7D9BD-6BD8-49C3-926E-0CA6DE0E8920}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{9C94CD49-D868-44DF-8314-86FB9FFA6D50}"
+	ProjectSection(SolutionItems) = preProject
+		..\README.md = ..\README.md
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
